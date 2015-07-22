@@ -78,3 +78,7 @@ h{
 	font-family: Arial;
 	font-size:40px;
 }
+.keyword{
+	color: rgb(51, 122, 183);
+	font-weight:bold;
+}
