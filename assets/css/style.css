@@ -29,6 +29,10 @@ h{
 
 .sub{
 
-	color: #767676;
-	font-size:18px;
+	color: #808080;
+	font-size:20px;
+}
+
+.color{
+	color:blue;
 }
