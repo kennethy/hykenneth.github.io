@@ -1,3 +1,6 @@
+*{
+	font-family: Georgia;
+}
 body{
 	background-color: #304575;
 	margin:0px;
@@ -21,11 +24,11 @@ body{
 }
 
 h{
-	font-family: Georgia;
 	font-size:7.0em;
 }
 
 .sub{
+
 	color: #767676;
-	font-size:17px;
+	font-size:18px;
 }
