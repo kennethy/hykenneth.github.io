@@ -1,0 +1,85 @@
+.outer{
+	display:table;
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+
+.middle{
+	display:table-cell;
+	vertical-align: top;
+	text-align: center;
+}
+
+.content{
+	padding-top:4%;
+}
+
+h{
+	font-size:7.0em;
+}
+
+.sub{
+
+	color: #696969;
+	font-size:16px;
+}
+
+.color{
+	color:blue;
+}
+
+.section{
+	width: 670px;
+	margin: 0 auto;
+}
+.title{
+	text-align:left;
+	font-size:25px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.section-body{
+	width:100%;
+	text-align: left;
+}
+
+.footer{
+	color: #696969;
+	font-size:12px;
+	font-style:italic;
+	padding-top:10px;
+}
+
+.ninja{
+	height:15px;
+}
+
+.class{
+	position:absolute;
+}
+
+.buttons{
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	z-index:9000;
+}
+.buttons button{
+	font-family: Arial;
+	font-size:40px;
+}
+.keyword{
+	color: rgb(51, 122, 183);
+	font-weight:bold;
+}
+
+.blackbar{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: black;
+	width: 100%;
+	height:10px;
+}
