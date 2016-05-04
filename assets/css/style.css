@@ -1,9 +1,17 @@
 *{
 	font-family: Georgia;
+	font-size:16px;
 }
 body{
 	background-color: #304575;
 	margin:0px;
+	/*background-image: url(../img/background.jpg);*/
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed;
 }
 
 .outer{
@@ -15,12 +23,12 @@ body{
 
 .middle{
 	display:table-cell;
-	vertical-align: top;
+	vertical-align: middle;
 	text-align: center;
 }
 
 .content{
-	padding-top:4%;
+	width: 100%;
 }
 
 h{
@@ -55,7 +63,7 @@ h{
 
 .footer{
 	color: #696969;
-	font-size:12px;
+	font-size:16px;
 	font-style:italic;
 	padding-top:10px;
 }
@@ -81,4 +89,12 @@ h{
 .keyword{
 	color: rgb(51, 122, 183);
 	font-weight:bold;
+}
+
+.greyBar{
+	background-color: #4c5264;
+}
+
+.heading{
+	font-size: 42px;
 }
