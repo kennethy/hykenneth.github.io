@@ -1,2 +1,1 @@
-# kennethy.github.io
-My Personal Website
+# Profile Page 
