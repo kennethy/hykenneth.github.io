@@ -36,10 +36,6 @@ h{
 	color:blue;
 }
 
-.section{
-	width: 670px;
-	margin: 0 auto;
-}
 .title{
 	text-align:left;
 	font-size:25px;
@@ -92,7 +88,7 @@ h{
 
 #menuwrap{
 	position: fixed;
-	top: 50%;
+	top: 45%;
 	right: 1%;
 	z-index: 999;
 }
@@ -126,4 +122,10 @@ h{
 	width:60%;
 	margin: auto;
 	overflow: hidden;
+}
+
+.textblock{
+	width: 520px;
+	margin: auto;
+	text-align: left;
 }
