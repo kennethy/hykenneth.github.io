@@ -103,11 +103,15 @@ h{
 #menuwrap li{
 	display: block;
 	width: 150px;
+	text-align: left;
+	padding-left: 10px;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
 }
 
 #menu .active{
-	border-right: 1px solid grey;
-	border-left: 1px solid grey;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
 }
 
 #menu a{
