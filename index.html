@@ -24,64 +24,105 @@
 	<body>
 		<div id="menuwrap">
 			<ul id="menu">
-				<li data-menuanchor="section1" class="active">
-					<a href="#section1">about me</a>
+				<li data-menuanchor="about" class="active">
+					<a href="#about">about</a>
 				</li>
-				<li data-menuanchor="section2">
-					<a href="#section2">side projects</a>
+				<li data-menuanchor="experience">
+					<a href="#experience">internships</a>
 				</li>
-				<li data-menuanchor="section3">
-					<a href="#section3">contact</a>
+				<li data-menuanchor="projects">
+					<a href="#projects">projects</a>
+				</li>
+				<li data-menuanchor="contact">
+					<a href="#contact">contact</a>
 				</li>
 			</ul>
 		</div>
 		<div id="fullpage">
-			<div class="section" data-anchor="section1">
+			<div class="section" data-anchor="about">
 				<div class="heading">
 					> Hello, I'm Kenneth.
 				</div>	
-				5th Year Computer Science &amp; Business Administration (Double Degree) @ UWaterloo
-				
+				I am currently pursuing Bachelor of Computer Science &amp; <br>Business Administration (Double Degree) @ UWaterloo
+				<br><br>
 				<!-- <div class="footer">
 					past projects &amp; codes on <a target="_blank" href="https://github.com/kennethy">github</a> 
 				</div> -->
 			</div>
-			<div class="section" data-anchor="section2">
+			<div class="section" data-anchor="experience">
+					<div class="heading">
+						Past Internships
+					</div>	
+					to be updated...
+					<!-- <div class="jobBlock">
+						<div class="jobdiv">
+							<div>
+								<img width="150px" src="assets/img/uw_logo.jpg" />
+							</div>
+							<div>
+								Web Developer
+							</div>
+						</div>
+						<div class="jobdiv">
+							<div>
+								<img width="150px" src="assets/img/ci_logo.jpg" />
+							</div>
+							<div>
+								Program Analyst
+							</div>
+						</div>
+						<div class="jobdiv">
+							<div>
+								<img width="150px" src="assets/img/dbrs_logo.jpg" />
+							</div>
+							<div>
+							Software Engineer
+							</div>
+						</div>
+						<div class="jobdiv">
+							<div>
+								<img width="150px" src="assets/img/zynga_logo.jpg" />
+							</div>
+							<div>
+								Software Engineer in Test
+							</div>
+						</div>
+					</div> -->
+
+			</div> <!-- end section -->
+			<div class="section" data-anchor="projects">
 					<div class="heading">
 						Side Projects
 					</div>	
-					please visit my <a target="_blank" href="https://github.com/kennethy">github</a> 
-
-					
-					<!-- <div class="footer">
+					<div class="footer">
 						past projects &amp; codes on <a target="_blank" href="https://github.com/kennethy">github</a> 
-					</div> -->
+					</div>
+					
 			</div> <!-- end section -->
-			<div class="section" data-anchor="section3">
+			<div class="section" data-anchor="contact">
 					<div class="heading">
 						Contact me
 					</div>	
 					Feel free to send <a href="mailto: hykenneth@gmail.com">me</a> a message in regards of job opportunities!
-					
-					<!-- <div class="footer">
-						past projects &amp; codes on <a target="_blank" href="https://github.com/kennethy">github</a> 
-					</div> -->
 			</div> <!-- end section -->
 		</div>
 	</body>
+	<!-- 	external scripts -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/fullPage/jquery.fullPage.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.5/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.5/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="assets/js/JobBlock.js"></script>
 	<script>
 	$(document).ready(function(){
 		 $('#fullpage').fullpage({
-		 	anchors: ['section1', 'section2', 'section3'],
+		 	anchors: ['about', 'experience', 'projects', 'contact'],
 		 	menu: "#menu",
-		 	afterLoad: function(link, index){
-		 		console.log($("#menu").find("li").eq(index).find("a").text());
-		 	}
 		 });
-		 console.log("Ready");
+		 console.log("jquery ready");
 
 	});
 	</script>

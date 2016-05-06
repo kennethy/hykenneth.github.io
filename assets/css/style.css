@@ -93,7 +93,7 @@ h{
 #menuwrap{
 	position: fixed;
 	top: 50%;
-	right: 5%;
+	right: 1%;
 	z-index: 999;
 }
 
@@ -102,7 +102,7 @@ h{
 }
 #menuwrap li{
 	display: block;
-	width: 150px;
+	width: 120px;
 	text-align: left;
 	padding-left: 10px;
 	border-left: 1px solid white;
@@ -110,10 +110,20 @@ h{
 }
 
 #menu .active{
-	border-right: 1px solid black;
-	border-left: 1px solid black;
+	border-right: 1px solid #b3b3b3;
+	border-left: 1px solid #b3b3b3;
 }
 
 #menu a{
 	text-decoration: none;
+}
+
+.jobdiv{
+	border: 1px solid red;
+}
+
+.jobBlock{
+	width:60%;
+	margin: auto;
+	overflow: hidden;
 }
