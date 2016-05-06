@@ -1,18 +1,9 @@
 *{
 	font-family: Georgia;
 	font-size:16px;
+	text-align: center;
 }
-body{
-	background-color: #304575;
-	margin:0px;
-	/*background-image: url(../img/background.jpg);*/
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center !important;
-	background-repeat: no-repeat !important;
-	background-attachment: fixed;
-}
+
 
 .outer{
 	display:table;
@@ -23,7 +14,7 @@ body{
 
 .middle{
 	display:table-cell;
-	vertical-align: middle;
+	vertical-align: top;
 	text-align: center;
 }
 
@@ -97,4 +88,28 @@ h{
 
 .heading{
 	font-size: 42px;
+}
+
+#menuwrap{
+	position: fixed;
+	top: 50%;
+	right: 5%;
+	z-index: 999;
+}
+
+#menuwrap ul{
+	list-style: none;
+}
+#menuwrap li{
+	display: block;
+	width: 150px;
+}
+
+#menu .active{
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+}
+
+#menu a{
+	text-decoration: none;
 }

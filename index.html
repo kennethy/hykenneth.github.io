@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Kenneth Yang</title>
@@ -8,6 +8,8 @@
 		<meta name="keywords" content="Kenneth Yang, Computer Science, University of Waterloo, Software Engineer"> 
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+		<!-- external java lib -->
+		<link rel="stylesheet" type="text/css" href="assets/js/fullPage/jquery.fullPage.css" />
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -20,26 +22,67 @@
 		</script>
 	</head>
 	<body>
-		<div class="outer">
-			<div class="middle">
-				<div class="content">
-					<div class="heading">
-						Hello, I'm Kenneth.
-					</div>	
-					5th Year Computer Science &amp; Business Administration (Double Degree) @ UWaterloo
-					
-					<div class="footer">
-						past projects &amp; codes on <a href="https://github.com/kennethy">github</a> 
-					</div>
-				</div>
+		<div id="menuwrap">
+			<ul id="menu">
+				<li data-menuanchor="section1" class="active">
+					<a href="#section1">about me</a>
+				</li>
+				<li data-menuanchor="section2">
+					<a href="#section2">side projects</a>
+				</li>
+				<li data-menuanchor="section3">
+					<a href="#section3">contact</a>
+				</li>
+			</ul>
+		</div>
+		<div id="fullpage">
+			<div class="section" data-anchor="section1">
+				<div class="heading">
+					Hello, I'm Kenneth.
+				</div>	
+				5th Year Computer Science &amp; Business Administration (Double Degree) @ UWaterloo
+				
+				<!-- <div class="footer">
+					past projects &amp; codes on <a target="_blank" href="https://github.com/kennethy">github</a> 
+				</div> -->
 			</div>
+			<div class="section" data-anchor="section2">
+					<div class="heading">
+						Side Projects
+					</div>	
+					please visit my <a target="_blank" href="https://github.com/kennethy">github</a> 
+
+					
+					<!-- <div class="footer">
+						past projects &amp; codes on <a target="_blank" href="https://github.com/kennethy">github</a> 
+					</div> -->
+			</div> <!-- end section -->
+			<div class="section" data-anchor="section3">
+					<div class="heading">
+						Feel free to contact me
+					</div>	
+					to be updated
+					
+					<!-- <div class="footer">
+						past projects &amp; codes on <a target="_blank" href="https://github.com/kennethy">github</a> 
+					</div> -->
+			</div> <!-- end section -->
 		</div>
 	</body>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/fullPage/jquery.fullPage.js"></script>
 	<script>
 	$(document).ready(function(){
-		console.log("Ready");
+		 $('#fullpage').fullpage({
+		 	anchors: ['section1', 'section2', 'section3'],
+		 	menu: "#menu",
+		 	afterLoad: function(link, index){
+		 		console.log($("#menu").find("li").eq(index).find("a").text());
+		 	}
+		 });
+		 console.log("Ready");
+
 	});
 	</script>
 </html>
