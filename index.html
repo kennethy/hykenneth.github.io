@@ -122,11 +122,17 @@
     <script src="assets/js/JobBlock.js"></script>
 	<script>
 	$(document).ready(function(){
-		 $('#fullpage').fullpage({
-		 	anchors: ['about', 'experience', 'projects', 'contact'],
-		 	menu: "#menu",
-		 });
-		 console.log("jquery ready");
+		// mobile detection
+		var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())); 
+		if(mobile){
+			$("#menuwrap").hide();
+		}
+
+		$('#fullpage').fullpage({
+			anchors: ['about', 'experience', 'projects', 'contact'],
+			menu: "#menu",
+		});
+		console.log("jquery ready");
 
 	});
 	</script>
