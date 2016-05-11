@@ -83,7 +83,11 @@ h{
 }
 
 .heading{
+	margin: auto;
+	width: 50%;
 	font-size: 42px;
+	border-bottom: 1px dotted #8c8c8c;
+	margin-bottom: 10px;
 }
 
 #menuwrap{
@@ -125,7 +129,7 @@ h{
 }
 
 .textblock{
-	width: 60%;
+	width: 50%;
 	margin: auto;
 	text-align: left;
 }
