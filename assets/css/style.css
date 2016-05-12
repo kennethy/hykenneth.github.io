@@ -119,13 +119,18 @@ h{
 }
 
 .jobdiv{
-	border: 1px solid red;
+	position: relative;
+	left: 0px;
+	width: 100%;
+	text-align: left;
 }
 
 .jobBlock{
-	width:60%;
-	margin: auto;
+	width:50%;
 	overflow: hidden;
+	text-align:left;
+	margin: auto;
+	
 }
 
 .textblock{
