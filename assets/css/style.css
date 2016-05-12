@@ -133,3 +133,12 @@ h{
 	margin: auto;
 	text-align: left;
 }
+
+.profilewrap{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow:hidden;
+	margin: auto;
+	border: 1px solid white;
+}
