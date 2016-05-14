@@ -1,13 +1,22 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Kenneth Yang's Page</title>
+		<title>Kenneth Yang</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="Kenneth Yang's Persnoal Website">
 		<meta name="author" content="Kenneth Yang">
 		<meta name="keywords" content="Kenneth Yang, Computer Science, University of Waterloo, Software Engineer"> 
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+		<!-- external java lib -->
+		<link rel="stylesheet" type="text/css" href="assets/js/fullPage/jquery.fullPage.css" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/fullPage/jquery.fullPage.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.5/react.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.5/react-dom.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -20,70 +29,118 @@
 		</script>
 	</head>
 	<body>
-		<div class="outer">
-			<div class="middle">
-				<div class="content">
-					<h>Hello Friend!</h><br>
-					<div class="section">
-						<div class="title"><span class="glyphicon glyphicon-user"></span>
-							&nbsp;My name is Kenneth Yang
-						</div>
-						<div class="section-body" style="-webkit-margin-after:1em;">
-							<span class="sub">I am currently pursuing Bachelor of <i class="keyword">Computer Science</i> & <i class="keyword">Business Administration</i> Double Degree at University of Waterloo and Wilfrid Laurier University. Class of 2016.<br></span>
-						</div>
-						<div class="ninja"></div>
+		<div id="menuwrap">
+			<ul id="menu">
+				<li data-menuanchor="about" class="active">
+					<a href="#about">about</a>
+				</li>
+				<li data-menuanchor="projects">
+					<a href="#projects">projects</a>
+				</li>
+				<li data-menuanchor="experience">
+					<a href="#experience">internships</a>
+				</li>
+				<li data-menuanchor="contact">
+					<a href="#contact">contact me</a>
+				</li>
+			</ul>
+		</div>
+		<div id="fullpage">
+			<div class="section" data-anchor="about">
+				<div class="profilewrap">
+					<img src="assets/img/me.png" width="150px"/>
+				</div>
+				<div class="heading">
+					Hello, I'm Kenneth.
+				</div>	
+				<div class="textblock">
+					I aim to learn something new every day, let it be a new basketball move, a new song to sing in the shower, or a way to solve an algo question.
+					<br>
+					<b></b><br>
+					I will be graduating in August, 2016 from the University of Waterloo with a bachelor degree in Computer Science. I am currently seeking for full-time opportunities (Software Engineer / Full Stack Web Developer roles). 
+					<br><br>
+					Please scroll down if you would like to know more about me!
+				</div>
+				<br><br>
+			</div>
+			<div class="section" data-anchor="projects">
+				<div class="heading">
+					Past Projects
+				</div>	
+				<div class="projwrap">
+					<div class="proj">
+						<b>4-Player Game: Co-Manned</b><br>
+						Mobile App (iOS &amp; Anroid)<br><br>
+						C#, Unity Game Engine
+						<img class="projimg" src="assets/img/projects/pilot.png" />
 					</div>
-					<div class="section">
-						<div class="title"><span class="glyphicon glyphicon-briefcase"></span>
-							&nbsp;Past Internships
-						</div>
-						<div class="section-body">
-							<span class="sub">
-								<ul>
-								<li>Tested Scramble with Friends @ Zynga Inc. </li>
-								<li>Extended internal applications @ DRBS Inc.</li>
-								<li>Improved SQL procedures @ CI Invesments Inc.</li>
-								<li>Developed web applications @ University of Waterloo</li>
-								</ul>
-							</span>
-						</div>
-						<div class="ninja"></div>
+					<div class="proj">
+						<b>Online Tic-Tac-Toe</b><br>
+						Web Application<br><br>
+						jQuery, Node.js, socket.io
+						<img class="projimg" src="assets/img/projects/tic-tac-toe.png"/>
 					</div>
-					<div class="section">
-						<div class="title"><span class="glyphicon glyphicon-wrench"></span>
-							&nbsp;Stack
-						</div>
-						<div class="section-body">
-							<span class="sub">
-								<ul>
-								<li>OOP: C++, C, Java </li>
-								<li>Web: NodeJS, PHP, HTML, CSS</li>
-								<li>Other: Git, MongoDB, MySQL, Perl</li>
-								</ul>
-							</span>
-						</div>
-						<div class="ninja"></div>
-					</div>
-					<div class="section">
-						<div class="title"><span class="glyphicon glyphicon-globe"></span>
-							&nbsp;Past Projects on <a href="https://github.com/kennethy">Github</a>
-						</div>
-						<div class="section-body">
-						</div>
-						<div class="ninja"></div>
-					</div>
-					<div class="footer">
-						Thank you for visiting! :)
+					<div class="proj">
+						<b>UWaterloo Building Locator</b><br>
+						Web Application <br><br>
+						jQuery, JavaScript
+						<img class="projimg" src="assets/img/projects/waterloc.png"/>
 					</div>
 				</div>
-			</div>
+				<div style="clear:both;"></div>
+				<div class="footer">
+						<br>more past projects &amp; stuff on my <a target="_blank" href="https://github.com/kennethy">github profile</a>
+				</div>
+			</div> <!-- end section -->
+			<div class="section" data-anchor="experience">
+					<div class="heading">
+						Past Internships
+					</div>	
+					<div class="jobBlock">
+						<b>Zynga Inc.</b>&nbsp;&nbsp;Jan 2015 - Apr 2015</br>
+						 Tested Play Word Streak With Friends<br>
+						 <br>
+						 <b>DBRS Limited.</b>&nbsp;&nbsp;Jan 2014 - Apr 2014</br>
+						 Added features for internal tools (C#, HTML, JavaScript, MongoDB)<br>
+						 <br>
+						 <b>CI Investments Inc.</b>&nbsp;&nbsp;Jan 2013 - Apr 2013</br>
+						 Worked on data migration (Perl)<br>
+						  <br>
+						 <b>University of Waterloo</b>&nbsp;&nbsp;Apr 2012 - Aug 2012</br>
+						 Developed <a href="http://krazon.byethost13.com/magazine/?ckattempt=1" target="_blank">this</a> online magazine website (HTML, PHP, MySQL)<br>
+					</div>
+
+			</div> <!-- end section -->
+			<div class="section" data-anchor="contact">
+				<div class="heading">
+					Contact Me
+				</div>	
+				<div class="textblock">
+				If you would like to have a chat with me, feel free to send <a href="mailto:hykenneth@gmail.com?Subject=Hello%20Kenneth!" target="_top">me</a> a message! 
+				<br><br>
+				Thank you for visiting and have a nice day!
+				<br><br>
+				:)
+				</div>
+			</div> <!-- end section -->
 		</div>
 	</body>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- 	external scripts -->
+    <script src="assets/js/JobBlock.js"></script>
 	<script>
 	$(document).ready(function(){
-		console.log("Ready");
+		// mobile detection
+		var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())); 
+		if(mobile){
+			$("#menuwrap").hide();
+		}
+
+		$('#fullpage').fullpage({
+			anchors: ['about', 'projects', 'experience', 'contact'],
+			menu: "#menu",
+		});
+		console.log("jquery ready");
+
 	});
 	</script>
 </html>

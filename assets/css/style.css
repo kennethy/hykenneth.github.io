@@ -1,10 +1,9 @@
 *{
 	font-family: Georgia;
+	font-size:16px;
+	text-align: center;
 }
-body{
-	background-color: #304575;
-	margin:0px;
-}
+
 
 .outer{
 	display:table;
@@ -20,7 +19,7 @@ body{
 }
 
 .content{
-	padding-top:4%;
+	width: 100%;
 }
 
 h{
@@ -37,10 +36,6 @@ h{
 	color:blue;
 }
 
-.section{
-	width: 670px;
-	margin: 0 auto;
-}
 .title{
 	text-align:left;
 	font-size:25px;
@@ -55,9 +50,10 @@ h{
 
 .footer{
 	color: #696969;
-	font-size:12px;
+	font-size:16px;
 	font-style:italic;
-	padding-top:10px;
+	margin: auto;
+	position: relative;
 }
 
 .ninja{
@@ -81,4 +77,93 @@ h{
 .keyword{
 	color: rgb(51, 122, 183);
 	font-weight:bold;
+}
+
+.greyBar{
+	background-color: #4c5264;
+}
+
+.heading{
+	margin: auto;
+	width: 50%;
+	font-size: 42px;
+	border-bottom: 1px dotted #8c8c8c;
+	margin-bottom: 10px;
+}
+
+#menuwrap{
+	position: fixed;
+	top: 45%;
+	right: 1%;
+	z-index: 999;
+}
+
+#menuwrap ul{
+	list-style: none;
+}
+#menuwrap li{
+	display: block;
+	width: 120px;
+	text-align: left;
+	padding-left: 10px;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+#menu .active{
+	border-right: 1px solid #b3b3b3;
+	border-left: 1px solid #b3b3b3;
+}
+
+#menu a{
+	text-decoration: none;
+}
+
+.jobdiv{
+	position: relative;
+	left: 0px;
+	width: 100%;
+	text-align: left;
+}
+
+.jobBlock{
+	width:50%;
+	overflow: hidden;
+	text-align:left;
+	margin: auto;
+	
+}
+
+.textblock{
+	width: 50%;
+	margin: auto;
+	text-align: left;
+}
+
+.profilewrap{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow:hidden;
+	margin: auto;
+	border: 1px solid white;
+}
+.projimg{
+	width: 300px;
+	height: 176px;
+	border: 1px solid white;
+}
+
+.projimg:hover{
+	border: 1px solid #8c8c8c;
+}
+
+.proj{
+	float: left;
+	width: 33%;
+}
+
+.projwrap{
+	width: 78%;
+	margin: auto;
 }
