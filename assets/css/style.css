@@ -1,169 +1,86 @@
-*{
-	font-family: Georgia;
-	font-size:16px;
+body{
+	font-family: "Robo";
+}
+
+@font-face {
+	font-family: "Robo";
+	src: url('../font/RobotoMono-Regular.ttf');
+}
+
+.profile-picture {
+	width: 200px;
+	height: 200px;
+	border-radius: 250%;
+	overflow:hidden;
+	border: 1px solid white;
+	margin: auto;
+}
+
+.profile-content {
+	font-family: 'Robo';
+	font-size: 16px;
+	width: 60%;
+	margin: auto;
+	height: 90vh;
+
+}
+
+#header {
+	height: 6vh;
+	padding: 5px;
+	margin: 0 auto;
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+
+#footer {
+	position: fixed;
+	font-size: 16px;
+	bottom: 0px;
 	text-align: center;
-}
-
-
-.outer{
-	display:table;
-	position:absolute;
-	height:100%;
-	width:100%;
-}
-
-.middle{
-	display:table-cell;
-	vertical-align: top;
-	text-align: center;
-}
-
-.content{
+	height: 50px;
+	border: 1px solid blue;
+	margin-left: 0px;
 	width: 100%;
 }
 
-h{
-	font-size:7.0em;
-}
-
-.sub{
-
-	color: #696969;
-	font-size:16px;
-}
-
-.color{
-	color:blue;
-}
-
-.title{
-	text-align:left;
-	font-size:25px;
-	font-weight: bold;
-	font-style: italic;
-}
-
-.section-body{
-	width:100%;
-	text-align: left;
-}
-
-.footer{
-	color: #696969;
-	font-size:16px;
-	font-style:italic;
-	margin: auto;
-	position: relative;
-}
-
-.ninja{
-	height:15px;
-}
-
-.class{
-	position:absolute;
-}
-
-.buttons{
-	position:absolute;
-	bottom:5px;
-	right:5px;
-	z-index:9000;
-}
-.buttons button{
-	font-family: Arial;
-	font-size:40px;
-}
-.keyword{
-	color: rgb(51, 122, 183);
-	font-weight:bold;
-}
-
-.greyBar{
-	background-color: #4c5264;
-}
-
-.heading{
-	margin: auto;
-	width: 50%;
-	font-size: 42px;
-	border-bottom: 1px dotted #8c8c8c;
-	margin-bottom: 10px;
-}
-
-#menuwrap{
-	position: fixed;
-	top: 45%;
-	right: 1%;
-	z-index: 999;
-}
-
-#menuwrap ul{
+#footer ul li{
+	display: inline-block;
+	text-decoration: none;
 	list-style: none;
-}
-#menuwrap li{
-	display: block;
-	width: 120px;
-	text-align: left;
-	padding-left: 10px;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+	padding: 0px;
 }
 
-#menu .active{
-	border-right: 1px solid #b3b3b3;
-	border-left: 1px solid #b3b3b3;
-}
-
-#menu a{
+#footer a{
 	text-decoration: none;
 }
 
-.jobdiv{
-	position: relative;
-	left: 0px;
+.container-full{
 	width: 100%;
-	text-align: left;
+	margin: 0 auto;
+	padding-left: 0x;
 }
 
-.jobBlock{
-	width:50%;
+.wrapper {
+	display: table;
 	overflow: hidden;
-	text-align:left;
-	margin: auto;
-	
+	height: 100%;
+	width: 100%;
 }
 
-.textblock{
-	width: 50%;
-	margin: auto;
-	text-align: left;
+.content {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
 }
 
-.profilewrap{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	overflow:hidden;
-	margin: auto;
+.name-tag {
+}
+
+
+.hover-row {
 	border: 1px solid white;
 }
-.projimg{
-	width: 300px;
-	height: 176px;
-	border: 1px solid white;
-}
-
-.projimg:hover{
-	border: 1px solid #8c8c8c;
-}
-
-.proj{
-	float: left;
-	width: 33%;
-}
-
-.projwrap{
-	width: 78%;
-	margin: auto;
-}
+.hover-row:hover {
+	border-bottom: 1px dashed #eee;
+};
