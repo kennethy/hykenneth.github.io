@@ -77,10 +77,16 @@ body{
 .name-tag {
 }
 
+.name-tag:hover {
+	cursor: pointer;
+}
+
 
 .hover-row {
 	border: 1px solid white;
 }
 .hover-row:hover {
 	border-bottom: 1px dashed #eee;
+	cursor: pointer;
+	color: #a8a8a8;
 };
